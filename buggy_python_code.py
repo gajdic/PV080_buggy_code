@@ -22,8 +22,12 @@ class Person(object):
 def print_nametag(format_string, person):
     print(format_string.format(person=person))
 
-#some docstring
+
 def fetch_website(urllib_version, url):
+    """
+    added docstring
+    """
+    
     # Import the requested version (2 or 3) of urllib
     exec(f"import urllib{urllib_version} as urllib", globals())
     # Fetch and print the requested URL
